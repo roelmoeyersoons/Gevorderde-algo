@@ -1,0 +1,27 @@
+digraph {
+"1"[label="4:hallo4"];
+"2"[label="1:hallo1"];
+"3" [shape=point];
+"4"[label="3:hallo3"];
+"5"[label="2:hallo2"];
+"6" [shape=point];
+"7" [shape=point];
+"5" -> "6";
+"5" -> "7";
+"8" [shape=point];
+"4" -> "5";
+"4" -> "8";
+"2" -> "3";
+"2" -> "4";
+"9"[label="7:hallo6"];
+"10"[label="5:hallo5"];
+"11" [shape=point];
+"12" [shape=point];
+"10" -> "11";
+"10" -> "12";
+"13" [shape=point];
+"9" -> "10";
+"9" -> "13";
+"1" -> "2";
+"1" -> "9";
+}

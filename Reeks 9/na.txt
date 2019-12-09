@@ -1,0 +1,11 @@
+digraph {
+  rankdir="LR";  -1 [shape=point];
+  -1 -> 0;
+  5 [shape=square];
+  1 -> 2[label="a"];
+  3 -> 4[label="b"];
+  0 -> 1[label="epsilon"];
+  0 -> 3[label="epsilon"];
+  2 -> 5[label="epsilon"];
+  4 -> 5[label="epsilon"];
+}

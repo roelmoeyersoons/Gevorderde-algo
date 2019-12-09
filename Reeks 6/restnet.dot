@@ -1,0 +1,28 @@
+digraph {
+{ rank=source; "1:P" }
+{ rank=sink; "4:V" }
+0 -> "1:P"[label="10"];
+0 -> 2[label="3"];
+0 -> 6[label="1"];
+0 -> 7[label="0"];
+"1:P" -> 0[label="0"];
+"1:P" -> 2[label="3"];
+2 -> 0[label="0"];
+2 -> "1:P"[label="4"];
+2 -> 5[label="0"];
+3 -> "4:V"[label="0"];
+3 -> 6[label="2"];
+3 -> 7[label="5"];
+"4:V" -> 3[label="7"];
+"4:V" -> 5[label="1"];
+"4:V" -> 6[label="7"];
+5 -> 2[label="4"];
+5 -> 6[label="2"];
+6 -> 0[label="5"];
+6 -> 3[label="0"];
+6 -> "4:V"[label="1"];
+6 -> 5[label="4"];
+7 -> 0[label="5"];
+7 -> "1:P"[label="2"];
+7 -> 3[label="1"];
+}
