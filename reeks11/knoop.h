@@ -2,7 +2,8 @@
 #define KNOOP_H
 
 #include "pugixml.cpp"
-
+#include <iostream>
+#include <fstream>
 
 class Knoop {
     public:
@@ -10,7 +11,7 @@ class Knoop {
         int index;
         double x;
         double y;
-
+        void print(std::ostream&);
 };
 
 Knoop::Knoop(pugi::xml_node node) : 
@@ -19,6 +20,9 @@ Knoop::Knoop(pugi::xml_node node) :
     index(std::stoi(node.attribute("nummer").value()))
     {}
 
+void Knoop::print(std::ostream& os){
+    os << index << ":\tKnoop(" << x << "," << y << ")" << std::endl;
+}
 
 
 #endif
